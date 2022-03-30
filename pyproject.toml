@@ -3,19 +3,19 @@ requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
-write_to = "untitled/_version.py"
+write_to = "dglhep/_version.py"
 
 [tool.black]
 line-length = 79
 
 [tool.pytest.ini_options]
-addopts = "--cov=untitled"
+addopts = "--cov=dglhep"
 testpaths = [
     "tests",
 ]
 
 [tool.mypy]
-mypy_path = "untitled"
+mypy_path = "dglhep"
 plugins = numpy.typing.mypy_plugin
 check_untyped_defs = true
 disallow_any_generics = true
